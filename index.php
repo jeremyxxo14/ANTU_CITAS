@@ -168,7 +168,7 @@ function checklen()
 
 
                             <div class="tab-pane fade show" id="admin" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Inresar como Admin</h3>
+                                <h3  class="register-heading">Inresar como Administrador</h3>
                                 <form method="post" action="func3.php">
                                 <div class="row register-form">
                                     <div class="col-md-6">
