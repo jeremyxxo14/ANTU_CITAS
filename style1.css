@@ -20,7 +20,7 @@ body {
     width: 60%;
     background: #f8f9fa;
     font-weight: bold;
-    color: #383d41;
+    color: #181a1c;
     margin-top: 30%;
     margin-bottom: 3%;
     cursor: pointer;
@@ -60,7 +60,7 @@ body {
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    background: #0062cc;
+    background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -69,13 +69,13 @@ body {
 .register .nav-tabs{
     margin-top: 3%;
     border: none;
-    background: #0062cc;
+    background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
     border-radius: 1.5rem;
     width: 28%;
     float: right;
 }
 .register .nav-tabs .nav-link{
-    padding: 1%;
+    padding: 5px;
     height: 34px;
     font-weight: 600;
     color: #fff;
@@ -87,8 +87,8 @@ body {
 }
 .register .nav-tabs .nav-link.active{
     width: 120px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
+    color: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
+    border: 2px solid #E2688F;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
