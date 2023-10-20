@@ -12,36 +12,36 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 <style >
-     .form-control {
+    .form-control {
     border-radius: 0.75rem;
 }
 </style>
 
 <script>
     var check = function() {
-  if (document.getElementById('password').value ==
+if (document.getElementById('password').value ==
     document.getElementById('cpassword').value) {
     document.getElementById('message').style.color = '#5dd05d';
     document.getElementById('message').innerHTML = 'Matched';
-  } else {
+} else {
     document.getElementById('message').style.color = '#f55252';
     document.getElementById('message').innerHTML = 'Not Matching';
-  }
+}
 }
 
-function alphaOnly(event) {
-  var key = event.keyCode;
-  return ((key >= 65 && key <= 90) || key == 8 || key == 32);
-};
+    function alphaOnly(event) {
+        var key = event.keyCode;
+        return ((key >= 65 && key <= 90) || key == 8 || key == 32);
+    };
 
-function checklen()
-{
-    var pass1 = document.getElementById("password");  
-    if(pass1.value.length<6){  
-        alert("Password must be at least 6 characters long. Try again!");  
-        return false;  
-  }  
-}
+    function checklen()
+    {
+        var pass1 = document.getElementById("password");  
+        if(pass1.value.length<6){  
+            alert("Password must be at least 6 characters long. Try again!");  
+            return false;  
+    }  
+    }
 
 </script>
 
@@ -52,27 +52,27 @@ function checklen()
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
-      <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>Antu</h4></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>Antu</h4></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item" style="margin-right: 40px;">
+        <li class="nav-item" style="margin-right: 40px;">
             <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Inicio</h6></a>
-          </li>
-  
-          <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Sobre Nostros</h6></a>
-          </li>
+        </li>
 
-          <li class="nav-item">
+        <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Sobre Nostros</h6></a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Contacto</h6></a>
-          </li>
+        </li>
         </ul>
-      </div>
     </div>
-  </nav>
+    </div>
+</nav>
 
 	
 
@@ -81,7 +81,6 @@ function checklen()
                     <div class="col-md-3 register-left" style="margin-top: 10%;right: 5%">
                         <img src="images/logo-aunto.jpeg" />
                         <h3>Bienvenido</h3>
-                       
                     </div>
                     <div class="col-md-9 register-right" style="margin-top: 40px;left: 80px;">
                         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%;">
