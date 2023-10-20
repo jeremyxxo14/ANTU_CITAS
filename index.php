@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>HMS</title>
+	<title>Antu</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 <link rel="stylesheet" type="text/css" href="style1.css">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -52,22 +52,22 @@ function checklen()
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
-      <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4></a>
+      <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>Antu</h4></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>HOME</h6></a>
+            <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Inicio</h6></a>
           </li>
   
           <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>ABOUT US</h6></a>
+            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Sobre Nostros</h6></a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>CONTACT</h6></a>
+            <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Contacto</h6></a>
           </li>
         </ul>
       </div>
@@ -80,24 +80,24 @@ function checklen()
                 <div class="row">
                     <div class="col-md-3 register-left" style="margin-top: 10%;right: 5%">
                         <img src="images/logo-aunto.jpeg" />
-                        <h3>Welcome</h3>
+                        <h3>Bienvenido</h3>
                        
                     </div>
                     <div class="col-md-9 register-right" style="margin-top: 40px;left: 80px;">
                         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%;">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Pacientes</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Receptionist</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Administrador</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h3 class="register-heading">Register as Patient</h3>
+                                <h3 class="register-heading">Registrarse como Paciente</h3>
                                 <form method="post" action="func2.php">
                                 <div class="row register-form">
                                     
@@ -116,14 +116,14 @@ function checklen()
                                             <div class="maxl">
                                                 <label class="radio inline"> 
                                                     <input type="radio" name="gender" value="Male" checked>
-                                                    <span> Male </span> 
+                                                    <span>Masculino</span> 
                                                 </label>
                                                 <label class="radio inline"> 
                                                     <input type="radio" name="gender" value="Female">
-                                                    <span>Female </span> 
+                                                    <span>Femenino</span> 
                                                 </label>
                                             </div>
-                                            <a href="index1.php">Already have an account?</a>
+                                            <a href="index1.php">Ya tienes una Cuenta?</a>
                                         </div>
                                     </div>
                                 
@@ -147,7 +147,7 @@ function checklen()
 
                             
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Login as Doctor</h3>
+                                <h3  class="register-heading">Ingresar como Doctor</h3>
                                 <form method="post" action="func1.php">
                                 <div class="row register-form">
                                     <div class="col-md-6">
@@ -168,7 +168,7 @@ function checklen()
 
 
                             <div class="tab-pane fade show" id="admin" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Login as Admin</h3>
+                                <h3  class="register-heading">Inresar como Admin</h3>
                                 <form method="post" action="func3.php">
                                 <div class="row register-form">
                                     <div class="col-md-6">

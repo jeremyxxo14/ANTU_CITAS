@@ -34,18 +34,18 @@ include("header.php");
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
-      <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4></a>
+      <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>Antu</h4></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>HOME</h6></a>
+            <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Inicio</h6></a>
           </li>
   
           <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>ABOUT US</h6></a>
+            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>Sobre Nostros</h6></a>
           </li>
 
           <li class="nav-item">
@@ -70,7 +70,7 @@ include("header.php");
       </div>
 
       <div style="color: white;">
-            <h4 style="font-family: 'IBM Plex Sans', sans-serif;"> We are here for you!</h4>
+            <h4 style="font-family: 'IBM Plex Sans', sans-serif;"> Estamos aqui para Ti!</h4>
           </div>
 
          </div>
@@ -81,12 +81,12 @@ include("header.php");
               <center>
                 <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#0062cc"></i>
                 <br>
-              <h3 style="margin-top: 10%">Patient Login</h3><br>
+              <h3 style="margin-top: 10%">Ingreso Paciente</h3><br>
               <form class="form-group" method="POST" action="func.php">
                 <div class="row" style="margin-top: 10%">
-                  <div class="col-md-4"><label>Email-ID: </label></div>
+                  <div class="col-md-4"><label>Email: </label></div>
                   <div class="col-md-8"><input type="text" name="email" class="form-control" placeholder="enter email ID" required/></div><br><br>
-                  <div class="col-md-4" style="margin-top: 8%"><label>Password: </label></div>
+                  <div class="col-md-4" style="margin-top: 8%"><label>Contraseña: </label></div>
                   <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="enter password" required/></div><br><br><br>
                 </div>
                 <div class="row">
