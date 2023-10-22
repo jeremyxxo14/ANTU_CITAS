@@ -30,7 +30,7 @@ include("header.php");
 }
 
   </style>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff); background-size: cover;">
+  <body style="background: -webkit-linear-gradient(left, #E2688F, #F3BB2A); background-size: cover;">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
@@ -91,7 +91,7 @@ include("header.php");
                 </div>
                 <div class="row">
                  <div class="col-md-4"  style="padding-left: 160px;margin-top: 10%">
-                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-primary"></center></div>           
+                    <center><input type="submit" id="inputbtn" name="patsub" value="Entrar" class="btn btn-primary btn-color"></center></div>           
                  <!--  <div class="col-md-8" style="margin-top: 10%">
                     <a href="index.php" class="btn btn-primary">Back</a></div> -->
                 </div>

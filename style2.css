@@ -44,3 +44,9 @@
     margin-left: 60%;
     color: white;
 }
+
+.btn-color{
+
+    background: -webkit-linear-gradient(left, #E2688F, #F3BB2A); 
+    border-color: #F3BB2A;
+}
