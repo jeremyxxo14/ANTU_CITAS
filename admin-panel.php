@@ -529,10 +529,10 @@ function get_specs(){
                 <thead>
                   <tr>
                     
-                    <th scope="col">Doctor Name</th>
-                    <th scope="col">Appointment ID</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
+                    <th scope="col">Nombre Profesional</th>
+                    <th scope="col">Cita ID</th>
+                    <th scope="col">Cita Fecha</th>
+                    <th scope="col">Cita Hora</th>
                     <th scope="col">Diseases</th>
                     <th scope="col">Allergies</th>
                     <th scope="col">Prescriptions</th>
