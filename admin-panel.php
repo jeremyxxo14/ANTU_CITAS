@@ -421,10 +421,10 @@ function get_specs(){
                               <input class="form-control" type="text" name="docFees" id="docFees" readonly="readonly"/>
                   </div><br><br>
 
-                  <div class="col-md-4"><label>Appointment Date</label></div>
+                  <div class="col-md-4"><label>Fecha Cita</label></div>
                   <div class="col-md-8"><input type="date" class="form-control datepicker" name="appdate"></div><br><br>
 
-                  <div class="col-md-4"><label>Appointment Time</label></div>
+                  <div class="col-md-4"><label>Hora Cita</label></div>
                   <div class="col-md-8">
                     <!-- <input type="time" class="form-control" name="apptime"> -->
                     <select name="apptime" class="form-control" id="apptime" required="required">
