@@ -78,9 +78,8 @@ if (document.getElementById('password').value ==
 
 <div class="container register" style="font-family: 'IBM Plex Sans', sans-serif;">
                 <div class="row">
-                    <div class="col-md-3 register-left" style="margin-top: 10%;right: 5%">
+                    <div class="col-md-3 register-left" style="right: 5%">
                         <img src="img/antu_profesionales/antu.png" />
-                        <h3>Bienvenido</h3>
                     </div>
                     <div class="col-md-9 register-right" style="margin-top: 40px;left: 80px;">
                         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%;">

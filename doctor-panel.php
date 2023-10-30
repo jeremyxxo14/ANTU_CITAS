@@ -66,13 +66,13 @@ if(isset($_GET['cancel']))
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+      background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
+    border-color: #F3BB2A;
 }
 .text-primary {
     color: #342ac1!important;
@@ -89,8 +89,8 @@ if(isset($_GET['cancel']))
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
-      <input class="form-control mr-sm-2" type="text" placeholder="Enter contact number" aria-label="Search" name="contact">
-      <input type="submit" class="btn btn-outline-light" id="inputbtn" name="search_submit" value="Search">
+      <input class="form-control mr-sm-2" type="text" placeholder="Ingrese numero de contacto" aria-label="Search" name="contact">
+      <input type="submit" class="btn btn-outline-light" id="inputbtn" name="search_submit" value="Buscar">
     </form>
   </div>
 </nav>
