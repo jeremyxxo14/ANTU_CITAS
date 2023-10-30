@@ -71,7 +71,7 @@ if(isset($_GET['cancel']))
     $query=mysqli_query($con,"update appointmenttb set userStatus='0' where ID = '".$_GET['ID']."'");
     if($query)
     {
-      echo "<script>alert('Your appointment successfully cancelled');</script>";
+      echo "<script>alert('Tu boleta ya fue pagada');</script>";
     }
   }
 
@@ -494,12 +494,12 @@ function get_specs(){
                     }
                     if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
                     {
-                      echo "Cancelled by You";
+                      echo "Cancelado por ti";
                     }
 
                     if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
                     {
-                      echo "Cancelled by Doctor";
+                      echo "Cancelado por Profesional";
                     }
                         ?></td>
 
@@ -513,7 +513,7 @@ function get_specs(){
                               title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 
-                                echo "Cancelled";
+                                echo "Eliminado";
                                 } ?>
                         
                         </td>
@@ -575,7 +575,7 @@ function get_specs(){
 
                               <a href="admin-panel.php?ID=<?php echo $row['ID']?>">
                               <input type ="hidden" name="ID" value="<?php echo $row['ID']?>"/>
-                              <input type = "submit" onclick="alert('Bill Paid Successfully');" name ="generate_bill" class = "btn btn-success" value="Pay Bill"/>
+                              <input type = "submit" onclick="alert('Boleta pagada exitosamente');" name ="generate_bill" class = "btn btn-success" value="Boleta"/>
                               </a>
                               </td>
                               </form>
