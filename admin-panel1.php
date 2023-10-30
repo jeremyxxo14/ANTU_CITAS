@@ -365,7 +365,7 @@ if(isset($_POST['docsub1']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                  <th scope="col">Profesionales</th>
+                  <th scope="col">Profesional</th>
                     <th scope="col">Paciente ID</th>
                     <th scope="col">Cita ID</th>
                     <th scope="col">Nombre</th>
