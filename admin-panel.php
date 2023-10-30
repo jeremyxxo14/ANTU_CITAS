@@ -533,10 +533,10 @@ function get_specs(){
                     <th scope="col">Cita ID</th>
                     <th scope="col">Cita Fecha</th>
                     <th scope="col">Cita Hora</th>
-                    <th scope="col">Diseases</th>
-                    <th scope="col">Allergies</th>
-                    <th scope="col">Prescriptions</th>
-                    <th scope="col">Bill Payment</th>
+                    <th scope="col">Condiciones</th>
+                    <th scope="col">Alergias</th>
+                    <th scope="col">Indicaciones</th>
+                    <th scope="col">Boleta</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -592,7 +592,7 @@ function get_specs(){
       <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
       <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
         <form class="form-group" method="post" action="func.php">
-          <label>Doctors name: </label>
+          <label>Nombre Profesional: </label>
           <input type="text" name="name" placeholder="Enter doctors name" class="form-control">
           <br>
           <input type="submit" name="doc_sub" value="Add Doctor" class="btn btn-primary">
