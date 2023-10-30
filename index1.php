@@ -85,9 +85,9 @@ include("header.php");
               <form class="form-group" method="POST" action="func.php">
                 <div class="row" style="margin-top: 10%">
                   <div class="col-md-4"><label>Email: </label></div>
-                  <div class="col-md-8"><input type="text" name="email" class="form-control" placeholder="enter email ID" required/></div><br><br>
+                  <div class="col-md-8"><input type="text" name="email" class="form-control" placeholder="Ingresa Email" required/></div><br><br>
                   <div class="col-md-4" style="margin-top: 8%"><label>Contraseña: </label></div>
-                  <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="enter password" required/></div><br><br><br>
+                  <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="Ingresa contraseña" required/></div><br><br><br>
                 </div>
                 <div class="row">
                  <div class="col-md-4"  style="padding-left: 160px;margin-top: 10%">
