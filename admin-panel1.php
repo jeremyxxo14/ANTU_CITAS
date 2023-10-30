@@ -53,7 +53,7 @@ if(isset($_POST['docsub1']))
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Antu </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -112,7 +112,7 @@ if(isset($_POST['docsub1']))
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav mr-auto">
        <li class="nav-item">
-        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Salir</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#"></a>
@@ -127,18 +127,18 @@ if(isset($_POST['docsub1']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME RECEPTIONIST </h3>
+    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> Bienvenido Administrador </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:25%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="home">Dashboard</a>
-      <a class="list-group-item list-group-item-action" href="#list-doc" id="list-doc-list"  role="tab"    aria-controls="home" data-toggle="list">Doctor List</a>
-      <a class="list-group-item list-group-item-action" href="#list-pat" id="list-pat-list"  role="tab" data-toggle="list" aria-controls="home">Patient List</a>
-      <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list"  role="tab" data-toggle="list" aria-controls="home">Appointment Details</a>
-      <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list"  role="tab" data-toggle="list" aria-controls="home">Prescription List</a>
-      <a class="list-group-item list-group-item-action" href="#list-settings" id="list-adoc-list"  role="tab" data-toggle="list" aria-controls="home">Add Doctor</a>
-      <a class="list-group-item list-group-item-action" href="#list-settings1" id="list-ddoc-list"  role="tab" data-toggle="list" aria-controls="home">Delete Doctor</a>
-      <a class="list-group-item list-group-item-action" href="#list-mes" id="list-mes-list"  role="tab" data-toggle="list" aria-controls="home">Queries</a>
+      <a class="list-group-item list-group-item-action active" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="home">Inicio</a>
+      <a class="list-group-item list-group-item-action" href="#list-doc" id="list-doc-list"  role="tab"    aria-controls="home" data-toggle="list">Lista Profesionales</a>
+      <a class="list-group-item list-group-item-action" href="#list-pat" id="list-pat-list"  role="tab" data-toggle="list" aria-controls="home">Lista Pacientes</a>
+      <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list"  role="tab" data-toggle="list" aria-controls="home">Detalles Citas</a>
+      <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list"  role="tab" data-toggle="list" aria-controls="home">Lista Indicaciones</a>
+      <a class="list-group-item list-group-item-action" href="#list-settings" id="list-adoc-list"  role="tab" data-toggle="list" aria-controls="home">Agregar Profesionales</a>
+      <a class="list-group-item list-group-item-action" href="#list-settings1" id="list-ddoc-list"  role="tab" data-toggle="list" aria-controls="home">Eliminar Profesionale</a>
+      <a class="list-group-item list-group-item-action" href="#list-mes" id="list-mes-list"  role="tab" data-toggle="list" aria-controls="home">Mensajes</a>
       
     </div><br>
   </div>
@@ -154,7 +154,7 @@ if(isset($_POST['docsub1']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Doctor List</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;">Lista Profesionales</h4>
                       <script>
                         function clickDiv(id) {
                           document.querySelector(id).click();
@@ -162,7 +162,7 @@ if(isset($_POST['docsub1']))
                       </script> 
                       <p class="links cl-effect-1">
                         <a href="#list-doc" onclick="clickDiv('#list-doc-list')">
-                          View Doctors
+                          Ver Profesionales
                         </a>
                       </p>
                     </div>
@@ -173,11 +173,11 @@ if(isset($_POST['docsub1']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Patient List</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;">Lista Pacientes</h4>
                       
                       <p class="cl-effect-1">
                         <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
-                          View Patients
+                          Ver Pacientes
                         </a>
                       </p>
                     </div>
@@ -189,11 +189,11 @@ if(isset($_POST['docsub1']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Appointment Details</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;">Detalles Citas</h4>
                     
                       <p class="cl-effect-1">
                         <a href="#app-hist" onclick="clickDiv('#list-app-list')">
-                          View Appointments
+                          Ver Citas
                         </a>
                       </p>
                     </div>
@@ -206,11 +206,11 @@ if(isset($_POST['docsub1']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Prescription List</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;">Lista Indicaciones</h4>
                     
                       <p class="cl-effect-1">
                         <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
-                          View Prescriptions
+                          Ver Indicaciones
                         </a>
                       </p>
                     </div>
@@ -222,13 +222,13 @@ if(isset($_POST['docsub1']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Manage Doctors</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;">Administrar Profesionales</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')">Add Doctors</a>
+                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')">Agregar Profesinales</a>
                         &nbsp|
                         <a href="#app-hist" onclick="clickDiv('#list-ddoc-list')">
-                          Delete Doctors
+                          Eliminar Profesionales
                         </a>
                       </p>
                     </div>
@@ -263,11 +263,11 @@ if(isset($_POST['docsub1']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">Doctor Name</th>
-                    <th scope="col">Specialization</th>
+                    <th scope="col">Nombre Profesionales</th>
+                    <th scope="col">Especialicacion</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Password</th>
-                    <th scope="col">Fees</th>
+                    <th scope="col">Contraseña</th>
+                   
                   </tr>
                 </thead>
                 <tbody>
@@ -281,14 +281,14 @@ if(isset($_POST['docsub1']))
                       $spec = $row['spec'];
                       $email = $row['email'];
                       $password = $row['password'];
-                      $docFees = $row['docFees'];
+                      
                       
                       echo "<tr>
                         <td>$username</td>
                         <td>$spec</td>
                         <td>$email</td>
                         <td>$password</td>
-                        <td>$docFees</td>
+                        
                       </tr>";
                     }
 
@@ -312,13 +312,13 @@ if(isset($_POST['docsub1']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                  <th scope="col">Patient ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Gender</th>
+                  <th scope="col">Paciente ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Genero</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Password</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Contraseña</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -365,16 +365,16 @@ if(isset($_POST['docsub1']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                  <th scope="col">Doctor</th>
-                    <th scope="col">Patient ID</th>
-                    <th scope="col">Appointment ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
-                    <th scope="col">Disease</th>
-                    <th scope="col">Allergy</th>
-                    <th scope="col">Prescription</th>
+                  <th scope="col">Profesionales</th>
+                    <th scope="col">Paciente ID</th>
+                    <th scope="col">Cita ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Fecha Cita</th>
+                    <th scope="col">Hora Cita</th>
+                    <th scope="col">Condicion</th>
+                    <th scope="col">Alergia</th>
+                    <th scope="col">Indicación</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -434,18 +434,17 @@ if(isset($_POST['docsub1']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                  <th scope="col">Appointment ID</th>
-                  <th scope="col">Patient ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Gender</th>
+                  <th scope="col">Cita ID</th>
+                  <th scope="col">Paciente ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Genero</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Doctor Name</th>
-                    <th scope="col">Consultancy Fees</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
-                    <th scope="col">Appointment Status</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Nombre Profesional</th>
+                    <th scope="col">Fecha Cita</th>
+                    <th scope="col">Hora Cita</th>
+                    <th scope="col">Estado Cita</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -467,7 +466,6 @@ if(isset($_POST['docsub1']))
                         <td><?php echo $row['email'];?></td>
                         <td><?php echo $row['contact'];?></td>
                         <td><?php echo $row['doctor'];?></td>
-                        <td><?php echo $row['docFees'];?></td>
                         <td><?php echo $row['appdate'];?></td>
                         <td><?php echo $row['apptime'];?></td>
                         <td>
@@ -521,8 +519,8 @@ if(isset($_POST['docsub1']))
                   <div class="col-md-8"  id='cpass'><input type="password" class="form-control" onkeyup='check();' name="cdpassword" id="cdpassword" required>&nbsp &nbsp<span id='message'></span> </div><br><br>
                    
                   
-                  <div class="col-md-4"><label>Horas al Mes:</label></div>
-                  <div class="col-md-8"><input type="text" class="form-control"  name="docFees" required></div><br><br>
+                  <div class="col-md-4" hidden><label>Horas al Mes:</label></div>
+                  <div class="col-md-8" hidden><input type="text" class="form-control" value="1000" name="docFees" required></div><br><br>
                 </div>
           <input type="submit" name="docsub" value="Agregar Profesional" class="btn btn-primary">
         </form>
@@ -558,8 +556,8 @@ if(isset($_POST['docsub1']))
                   <tr>
                     <th scope="col">User Name</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Message</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Mensaje</th>
                   </tr>
                 </thead>
                 <tbody>
