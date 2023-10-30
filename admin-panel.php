@@ -434,6 +434,8 @@ function get_specs(){
                       <option value="12:00:00">12:00 PM</option>
                       <option value="14:00:00">2:00 PM</option>
                       <option value="16:00:00">4:00 PM</option>
+                      <option value="17:00:00">5:00 PM</option>
+                      <option value="18:00:00">6:00 PM</option>
                     </select>
 
                   </div><br><br>
@@ -455,12 +457,12 @@ function get_specs(){
                 <thead>
                   <tr>
                     
-                    <th scope="col">Doctor Name</th>
+                    <th scope="col">Nombre Paciente</th>
                     <th scope="col">Consultancy Fees</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
-                    <th scope="col">Current Status</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Fecha Cita</th>
+                    <th scope="col">Hora Cita</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Accion</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -507,7 +509,7 @@ function get_specs(){
 													
 	                        <a href="admin-panel.php?ID=<?php echo $row['ID']?>&cancel=update" 
                               onClick="return confirm('Are you sure you want to cancel this appointment ?')"
-                              title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancel</button></a>
+                              title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 
                                 echo "Cancelled";
