@@ -137,7 +137,7 @@ if(isset($_POST['docsub1']))
       <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list"  role="tab" data-toggle="list" aria-controls="home">Detalles Citas</a>
       <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list"  role="tab" data-toggle="list" aria-controls="home">Lista Indicaciones</a>
       <a class="list-group-item list-group-item-action" href="#list-settings" id="list-adoc-list"  role="tab" data-toggle="list" aria-controls="home">Agregar Profesionales</a>
-      <a class="list-group-item list-group-item-action" href="#list-settings1" id="list-ddoc-list"  role="tab" data-toggle="list" aria-controls="home">Eliminar Profesionale</a>
+      <a class="list-group-item list-group-item-action" href="#list-settings1" id="list-ddoc-list"  role="tab" data-toggle="list" aria-controls="home">Eliminar Profesionales</a>
       <a class="list-group-item list-group-item-action" href="#list-mes" id="list-mes-list"  role="tab" data-toggle="list" aria-controls="home">Mensajes</a>
       
     </div><br>
@@ -256,7 +256,7 @@ if(isset($_POST['docsub1']))
               <div class="col-md-8">
       <form class="form-group" action="doctorsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Enter Email ID" class = "form-control"></div>
+        <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Email ID" class = "form-control"></div>
         <div class="col-md-2"><input type="submit" name="doctor_search_submit" class="btn btn-primary" value="Search"></div></div>
       </form>
     </div>
@@ -304,7 +304,7 @@ if(isset($_POST['docsub1']))
        <div class="col-md-8">
       <form class="form-group" action="patientsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="patient_contact" placeholder="Enter Contact" class = "form-control"></div>
+        <div class="col-md-10"><input type="text" name="patient_contact" placeholder="Ingresa Numero" class = "form-control"></div>
         <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-primary" value="Search"></div></div>
       </form>
     </div>
@@ -534,7 +534,7 @@ if(isset($_POST['docsub1']))
                   <div class="col-md-8"><input type="email"  class="form-control" name="demail" required></div><br><br>
                   
                 </div>
-          <input type="submit" name="docsub1" value="Delete Doctor" class="btn btn-primary" onclick="confirm('do you really want to delete?')">
+          <input type="submit" name="docsub1" value="Eliminar Profesional" class="btn btn-primary" onclick="confirm('Seguro que quieres eliminar al profesional?')">
         </form>
       </div>
 
