@@ -524,7 +524,7 @@ if(isset($_POST['docsub1']))
                   <div class="col-md-4"><label>Horas al Mes:</label></div>
                   <div class="col-md-8"><input type="text" class="form-control"  name="docFees" required></div><br><br>
                 </div>
-          <input type="submit" name="docsub" value="Add Doctor" class="btn btn-primary">
+          <input type="submit" name="docsub" value="Agregar Profesional" class="btn btn-primary">
         </form>
       </div>
 
