@@ -31,7 +31,7 @@ body {
     border-bottom-left-radius: 10% 50%;
 }
 .register-left img{
-    width: 100%;
+    width: 130%;
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
