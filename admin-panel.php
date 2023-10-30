@@ -413,13 +413,7 @@ function get_specs(){
 
 
                   
-                  <div class="col-md-4"><label for="consultancyfees">
-                                Consultancy Fees
-                              </label></div>
-                              <div class="col-md-8">
-                              <!-- <div id="docFees">Select a doctor</div> -->
-                              <input class="form-control" type="text" name="docFees" id="docFees" readonly="readonly"/>
-                  </div><br><br>
+                 
 
                   <div class="col-md-4"><label>Fecha Cita</label></div>
                   <div class="col-md-8"><input type="date" class="form-control datepicker" name="appdate"></div><br><br>
@@ -428,7 +422,7 @@ function get_specs(){
                   <div class="col-md-8">
                     <!-- <input type="time" class="form-control" name="apptime"> -->
                     <select name="apptime" class="form-control" id="apptime" required="required">
-                      <option value="" disabled selected>Select Time</option>
+                      <option value="" disabled selected>Seleccion Tu Hora</option>
                       <option value="08:00:00">8:00 AM</option>
                       <option value="10:00:00">10:00 AM</option>
                       <option value="12:00:00">12:00 PM</option>
