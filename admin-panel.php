@@ -303,7 +303,7 @@ function get_specs(){
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <center><h4>Crea una Cita</h4></center><br>
+              <center><h4>Create an appointment</h4></center><br>
               <form class="form-group" method="post" action="admin-panel.php">
                 <div class="row">
                   
@@ -413,7 +413,13 @@ function get_specs(){
 
 
                   
-                 
+                  <div class="col-md-4"><label for="consultancyfees">
+                                Consultancy Fees
+                              </label></div>
+                              <div class="col-md-8">
+                              <!-- <div id="docFees">Select a doctor</div> -->
+                              <input class="form-control" type="text" name="docFees" id="docFees" readonly="readonly"/>
+                  </div><br><br>
 
                   <div class="col-md-4"><label>Fecha Cita</label></div>
                   <div class="col-md-8"><input type="date" class="form-control datepicker" name="appdate"></div><br><br>
