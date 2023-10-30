@@ -360,7 +360,7 @@ function get_specs(){
 
                   </script>
 
-              <div class="col-md-4"><label for="doctor">Especialista:</label></div>
+              <div class="col-md-4"><label for="doctor">Especialista: </label></div>
                 <div class="col-md-8">
                     <select name="doctor" class="form-control" id="doctor" required="required">
                       <option value="" disabled selected>Selecciona Especialista</option>
