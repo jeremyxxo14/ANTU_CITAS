@@ -323,11 +323,11 @@ function get_specs(){
         
 
                     <div class="col-md-4">
-                          <label for="spec">Especializacion:</label>
+                          <label for="spec">Especialidad:</label>
                         </div>
                         <div class="col-md-8">
                           <select name="spec" class="form-control" id="spec">
-                              <option value="" disabled selected>Selecciona Especializacion</option>
+                              <option value="" disabled selected>Seleccion De Especialidad</option>
                               <?php 
                               display_specs();
                               ?>
