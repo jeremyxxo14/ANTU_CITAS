@@ -15,7 +15,7 @@ if(isset($_POST['docsub']))
   $result=mysqli_query($con,$query);
   if($result)
     {
-      echo "<script>alert('Doctor added successfully!');</script>";
+      echo "<script>alert('Doctor Agregado Satisfactoriamente!');</script>";
   }
 }
 
@@ -27,10 +27,10 @@ if(isset($_POST['docsub1']))
   $result=mysqli_query($con,$query);
   if($result)
     {
-      echo "<script>alert('Doctor removed successfully!');</script>";
+      echo "<script>alert('Doctor Eliminado Satisfactoriamente!');</script>";
   }
   else{
-    echo "<script>alert('Unable to delete!');</script>";
+    echo "<script>alert('No Se Puede Eliminar!');</script>";
   }
 }
 
@@ -471,16 +471,16 @@ if(isset($_POST['docsub1']))
                         <td>
                     <?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
                     {
-                      echo "Active";
+                      echo "Activa";
                     }
                     if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
                     {
-                      echo "Cancelled by Patient";
+                      echo "Cancelada por Paciente";
                     }
 
                     if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
                     {
-                      echo "Cancelled by Doctor";
+                      echo "Cancelada por Profesional";
                     }
                         ?></td>
                       </tr>
