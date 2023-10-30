@@ -88,7 +88,7 @@ if (document.getElementById('password').value ==
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Pacientes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profesional</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Administrador</a>
@@ -146,7 +146,7 @@ if (document.getElementById('password').value ==
 
                             
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Ingresar como Doctor</h3>
+                                <h3  class="register-heading">Ingresar como Profesional</h3>
                                 <form method="post" action="func1.php">
                                 <div class="row register-form">
                                     <div class="col-md-6">
@@ -167,7 +167,7 @@ if (document.getElementById('password').value ==
 
 
                             <div class="tab-pane fade show" id="admin" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Inresar como Administrador</h3>
+                                <h3  class="register-heading">Ingresar como Administrador</h3>
                                 <form method="post" action="func3.php">
                                 <div class="row register-form">
                                     <div class="col-md-6">

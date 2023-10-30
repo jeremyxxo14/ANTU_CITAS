@@ -112,7 +112,7 @@ if(isset($_POST['docsub1']))
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav mr-auto">
        <li class="nav-item">
-        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Salir</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#"></a>
@@ -127,7 +127,7 @@ if(isset($_POST['docsub1']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME RECEPTIONIST </h3>
+    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> Bienvendio Recepcionista</h3>
     <div class="row">
   <div class="col-md-4" style="max-width:25%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">

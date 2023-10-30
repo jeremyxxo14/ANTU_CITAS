@@ -185,21 +185,22 @@ function get_specs(){
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+      background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
+
+    border-color: #F3BB2A;
 }
 .text-primary {
     color: #342ac1!important;
 }
 
 .btn-primary{
-  background-color: #3c50c1;
-  border-color: #3c50c1;
+  background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
+  border-color: #F3BB2A;
 }
   </style>
 
@@ -322,11 +323,11 @@ function get_specs(){
         
 
                     <div class="col-md-4">
-                          <label for="spec">Specialization:</label>
+                          <label for="spec">Especializacion:</label>
                         </div>
                         <div class="col-md-8">
                           <select name="spec" class="form-control" id="spec">
-                              <option value="" disabled selected>Select Specialization</option>
+                              <option value="" disabled selected>Selecciona Especializacion</option>
                               <?php 
                               display_specs();
                               ?>
@@ -351,10 +352,10 @@ function get_specs(){
 
                   </script>
 
-              <div class="col-md-4"><label for="doctor">Doctors:</label></div>
+              <div class="col-md-4"><label for="doctor">Especialista:</label></div>
                 <div class="col-md-8">
                     <select name="doctor" class="form-control" id="doctor" required="required">
-                      <option value="" disabled selected>Select Doctor</option>
+                      <option value="" disabled selected>Selecciona Especialista</option>
                 
                       <?php display_docs(); ?>
                     </select>
@@ -428,7 +429,7 @@ function get_specs(){
                   <div class="col-md-8">
                     <!-- <input type="time" class="form-control" name="apptime"> -->
                     <select name="apptime" class="form-control" id="apptime" required="required">
-                      <option value="" disabled selected>Seleccion Tu Hora</option>
+                      <option value="" disabled selected>Selecciona Tu Hora</option>
                       <option value="08:00:00">8:00 AM</option>
                       <option value="10:00:00">10:00 AM</option>
                       <option value="12:00:00">12:00 PM</option>
@@ -441,7 +442,7 @@ function get_specs(){
                   </div><br><br>
 
                   <div class="col-md-4">
-                    <input type="submit" name="app-submit" value="Create new entry" class="btn btn-primary" id="inputbtn">
+                    <input type="submit" name="app-submit" value="Crear nueva Cita" class="btn btn-primary" id="inputbtn">
                   </div>
                   <div class="col-md-8"></div>                  
                 </div>
@@ -458,7 +459,7 @@ function get_specs(){
                   <tr>
                     
                     <th scope="col">Nombre Paciente</th>
-                    <th scope="col">Consultancy Fees</th>
+                    <th scope="col">Horas de consultas</th>
                     <th scope="col">Fecha Cita</th>
                     <th scope="col">Hora Cita</th>
                     <th scope="col">Estado</th>
@@ -508,7 +509,7 @@ function get_specs(){
 
 													
 	                        <a href="admin-panel.php?ID=<?php echo $row['ID']?>&cancel=update" 
-                              onClick="return confirm('Are you sure you want to cancel this appointment ?')"
+                              onClick="Estas seguro que deseas eliminar esta cita ?')"
                               title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 
