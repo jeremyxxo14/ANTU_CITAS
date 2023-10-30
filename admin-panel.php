@@ -303,7 +303,7 @@ function get_specs(){
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <center><h4>Create an appointment</h4></center><br>
+              <center><h4>Crea una Cita</h4></center><br>
               <form class="form-group" method="post" action="admin-panel.php">
                 <div class="row">
                   
@@ -414,26 +414,28 @@ function get_specs(){
 
                   
                   <div class="col-md-4"><label for="consultancyfees">
-                                Consultancy Fees
+                                Horas de consultas
                               </label></div>
                               <div class="col-md-8">
                               <!-- <div id="docFees">Select a doctor</div> -->
                               <input class="form-control" type="text" name="docFees" id="docFees" readonly="readonly"/>
                   </div><br><br>
 
-                  <div class="col-md-4"><label>Appointment Date</label></div>
+                  <div class="col-md-4"><label>Fecha Cita</label></div>
                   <div class="col-md-8"><input type="date" class="form-control datepicker" name="appdate"></div><br><br>
 
-                  <div class="col-md-4"><label>Appointment Time</label></div>
+                  <div class="col-md-4"><label>Hora Cita</label></div>
                   <div class="col-md-8">
                     <!-- <input type="time" class="form-control" name="apptime"> -->
                     <select name="apptime" class="form-control" id="apptime" required="required">
-                      <option value="" disabled selected>Select Time</option>
+                      <option value="" disabled selected>Seleccion Tu Hora</option>
                       <option value="08:00:00">8:00 AM</option>
                       <option value="10:00:00">10:00 AM</option>
                       <option value="12:00:00">12:00 PM</option>
                       <option value="14:00:00">2:00 PM</option>
                       <option value="16:00:00">4:00 PM</option>
+                      <option value="17:00:00">5:00 PM</option>
+                      <option value="18:00:00">6:00 PM</option>
                     </select>
 
                   </div><br><br>
@@ -455,12 +457,12 @@ function get_specs(){
                 <thead>
                   <tr>
                     
-                    <th scope="col">Doctor Name</th>
+                    <th scope="col">Nombre Paciente</th>
                     <th scope="col">Consultancy Fees</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
-                    <th scope="col">Current Status</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Fecha Cita</th>
+                    <th scope="col">Hora Cita</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Accion</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -507,7 +509,7 @@ function get_specs(){
 													
 	                        <a href="admin-panel.php?ID=<?php echo $row['ID']?>&cancel=update" 
                               onClick="return confirm('Are you sure you want to cancel this appointment ?')"
-                              title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancel</button></a>
+                              title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 
                                 echo "Cancelled";
