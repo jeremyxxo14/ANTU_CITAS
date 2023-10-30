@@ -51,7 +51,7 @@ if(isset($_GET['cancel']))
     
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Antu </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -82,7 +82,7 @@ if(isset($_GET['cancel']))
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav mr-auto">
        <li class="nav-item">
-        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Salir</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#"></a>
@@ -101,13 +101,13 @@ if(isset($_GET['cancel']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family:'IBM Plex Sans', sans-serif;"> Welcome &nbsp<?php echo $_SESSION['dname'] ?>  </h3>
+    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family:'IBM Plex Sans', sans-serif;"> Bienvenido &nbsp<?php echo $_SESSION['dname'] ?>  </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:18%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" href="#list-dash" role="tab" aria-controls="home" data-toggle="list">Dashboard</a>
-      <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list" role="tab" data-toggle="list" aria-controls="home">Appointments</a>
-      <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list" role="tab" data-toggle="list" aria-controls="home"> Prescription List</a>
+      <a class="list-group-item list-group-item-action active" href="#list-dash" role="tab" aria-controls="home" data-toggle="list">Inicio</a>
+      <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list" role="tab" data-toggle="list" aria-controls="home">Citas</a>
+      <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list" role="tab" data-toggle="list" aria-controls="home"> Lista Indicaciones</a>
       
     </div><br>
   </div>
@@ -122,7 +122,7 @@ if(isset($_GET['cancel']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> View Appointments</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;"> Ver Citas</h4>
                       <script>
                         function clickDiv(id) {
                           document.querySelector(id).click();
@@ -141,11 +141,11 @@ if(isset($_GET['cancel']))
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> Prescriptions</h4>
+                      <h4 class="StepTitle" style="margin-top: 5%;"> Indicaciones</h4>
                         
                       <p class="links cl-effect-1">
                         <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
-                          Prescription List
+                          Lista Indicaciones
                         </a>
                       </p>
                     </div>
@@ -162,18 +162,18 @@ if(isset($_GET['cancel']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">Patient ID</th>
-                    <th scope="col">Appointment ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Gender</th>
+                    <th scope="col">Paciente ID</th>
+                    <th scope="col">Citas ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Genero</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
-                    <th scope="col">Current Status</th>
-                    <th scope="col">Action</th>
-                    <th scope="col">Prescribe</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Fechas Cita</th>
+                    <th scope="col">Hora Cita</th>
+                    <th scope="col">Estado Actual</th>
+                    <th scope="col">Accion</th>
+                    <th scope="col">Indicacion</th>
 
                   </tr>
                 </thead>
@@ -219,7 +219,7 @@ if(isset($_GET['cancel']))
 													
 	                        <a href="doctor-panel.php?ID=<?php echo $row['ID']?>&cancel=update" 
                               onClick="return confirm('Are you sure you want to cancel this appointment ?')"
-                              title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancel</button></a>
+                              title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 
                                 echo "Cancelled";
@@ -234,7 +234,7 @@ if(isset($_GET['cancel']))
 
                         <a href="prescribe.php?pid=<?php echo $row['pid']?>&ID=<?php echo $row['ID']?>&fname=<?php echo $row['fname']?>&lname=<?php echo $row['lname']?>&appdate=<?php echo $row['appdate']?>&apptime=<?php echo $row['apptime']?>"
                         tooltip-placement="top" tooltip="Remove" title="prescribe">
-                        <button class="btn btn-success">Prescibe</button></a>
+                        <button class="btn btn-success">Indicacion</button></a>
                         <?php } else {
 
                             echo "-";
@@ -257,16 +257,16 @@ if(isset($_GET['cancel']))
                 <thead>
                   <tr>
                     
-                    <th scope="col">Patient ID</th>
+                    <th scope="col">Paciente ID</th>
                     
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Appointment ID</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
-                    <th scope="col">Disease</th>
-                    <th scope="col">Allergy</th>
-                    <th scope="col">Prescribe</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Citas ID</th>
+                    <th scope="col">Citas Fecha</th>
+                    <th scope="col">Citas Hora</th>
+                    <th scope="col">Condicion</th>
+                    <th scope="col">Alergias</th>
+                    <th scope="col">Indicaciones</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -312,14 +312,13 @@ if(isset($_GET['cancel']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Doctor Name</th>
-                    <th scope="col">Consultancy Fees</th>
-                    <th scope="col">Appointment Date</th>
-                    <th scope="col">Appointment Time</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Nombre Doctor</th>
+                    <th scope="col">Fecha Cita</th>
+                    <th scope="col">Hora Cita</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -343,7 +342,7 @@ if(isset($_GET['cancel']))
                         <td><?php echo $row['email'];?></td>
                         <td><?php echo $row['contact'];?></td>
                         <td><?php echo $row['doctor'];?></td>
-                        <td><?php echo $row['docFees'];?></td>
+          
                         <td><?php echo $row['appdate'];?></td>
                         <td><?php echo $row['apptime'];?></td>
                       </tr>
@@ -361,13 +360,13 @@ if(isset($_GET['cancel']))
       <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
         <form class="form-group" method="post" action="admin-panel1.php">
           <div class="row">
-                  <div class="col-md-4"><label>Doctor Name:</label></div>
+                  <div class="col-md-4"><label>Nombre Profesional:</label></div>
                   <div class="col-md-8"><input type="text" class="form-control" name="doctor" required></div><br><br>
-                  <div class="col-md-4"><label>Password:</label></div>
+                  <div class="col-md-4"><label>Constraseña:</label></div>
                   <div class="col-md-8"><input type="password" class="form-control"  name="dpassword" required></div><br><br>
-                  <div class="col-md-4"><label>Email ID:</label></div>
+                  <div class="col-md-4"><label>Email:</label></div>
                   <div class="col-md-8"><input type="email"  class="form-control" name="demail" required></div><br><br>
-                  <div class="col-md-4"><label>Consultancy Fees:</label></div>
+                  <div class="col-md-4"><label>Horas consultas:</label></div>
                   <div class="col-md-8"><input type="text" class="form-control"  name="docFees" required></div><br><br>
                 </div>
           <input type="submit" name="docsub" value="Add Doctor" class="btn btn-primary">
