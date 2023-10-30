@@ -15,7 +15,7 @@ if(isset($_POST['docsub']))
   $result=mysqli_query($con,$query);
   if($result)
     {
-      echo "<script>alert('Doctor added successfully!');</script>";
+      echo "<script>alert('Doctor Agregado Satisfactoriamente!');</script>";
   }
 }
 
@@ -27,10 +27,10 @@ if(isset($_POST['docsub1']))
   $result=mysqli_query($con,$query);
   if($result)
     {
-      echo "<script>alert('Doctor removed successfully!');</script>";
+      echo "<script>alert('Doctor Eliminado Satisfactoriamente!');</script>";
   }
   else{
-    echo "<script>alert('Unable to delete!');</script>";
+    echo "<script>alert('No Se Puede Eliminar!');</script>";
   }
 }
 
@@ -137,7 +137,7 @@ if(isset($_POST['docsub1']))
       <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list"  role="tab" data-toggle="list" aria-controls="home">Detalles Citas</a>
       <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list"  role="tab" data-toggle="list" aria-controls="home">Lista Indicaciones</a>
       <a class="list-group-item list-group-item-action" href="#list-settings" id="list-adoc-list"  role="tab" data-toggle="list" aria-controls="home">Agregar Profesionales</a>
-      <a class="list-group-item list-group-item-action" href="#list-settings1" id="list-ddoc-list"  role="tab" data-toggle="list" aria-controls="home">Eliminar Profesionale</a>
+      <a class="list-group-item list-group-item-action" href="#list-settings1" id="list-ddoc-list"  role="tab" data-toggle="list" aria-controls="home">Eliminar Profesionales</a>
       <a class="list-group-item list-group-item-action" href="#list-mes" id="list-mes-list"  role="tab" data-toggle="list" aria-controls="home">Mensajes</a>
       
     </div><br>
@@ -256,7 +256,7 @@ if(isset($_POST['docsub1']))
               <div class="col-md-8">
       <form class="form-group" action="doctorsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Enter Email ID" class = "form-control"></div>
+        <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Ingresa Email" class = "form-control"></div>
         <div class="col-md-2"><input type="submit" name="doctor_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
@@ -304,7 +304,7 @@ if(isset($_POST['docsub1']))
        <div class="col-md-8">
       <form class="form-group" action="patientsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="patient_contact" placeholder="Enter Contact" class = "form-control"></div>
+        <div class="col-md-10"><input type="text" name="patient_contact" placeholder="Ingresa Numero" class = "form-control"></div>
         <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
@@ -426,7 +426,7 @@ if(isset($_POST['docsub1']))
          <div class="col-md-8">
       <form class="form-group" action="appsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="app_contact" placeholder="Enter Contact" class = "form-control"></div>
+        <div class="col-md-10"><input type="text" name="app_contact" placeholder="Ingresa Numero" class = "form-control"></div>
         <div class="col-md-2"><input type="submit" name="app_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
@@ -471,16 +471,16 @@ if(isset($_POST['docsub1']))
                         <td>
                     <?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
                     {
-                      echo "Active";
+                      echo "Activa";
                     }
                     if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
                     {
-                      echo "Cancelled by Patient";
+                      echo "Cancelada por Paciente";
                     }
 
                     if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
                     {
-                      echo "Cancelled by Doctor";
+                      echo "Cancelada por Profesional";
                     }
                         ?></td>
                       </tr>
@@ -534,7 +534,7 @@ if(isset($_POST['docsub1']))
                   <div class="col-md-8"><input type="email"  class="form-control" name="demail" required></div><br><br>
                   
                 </div>
-          <input type="submit" name="docsub1" value="Eliminar Doctor" class="btn btn-primary" onclick="confirm('do you really want to delete?')">
+          <input type="submit" name="docsub1" value="Eliminar Profesional" class="btn btn-primary" onclick="confirm('Seguro que quieres eliminar al profesional?')">
         </form>
       </div>
 
@@ -546,7 +546,7 @@ if(isset($_POST['docsub1']))
          <div class="col-md-8">
       <form class="form-group" action="messearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="mes_contact" placeholder="Enter Contact" class = "form-control"></div>
+        <div class="col-md-10"><input type="text" name="mes_contact" placeholder="ingresa contacto" class = "form-control"></div>
         <div class="col-md-2"><input type="submit" name="mes_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
