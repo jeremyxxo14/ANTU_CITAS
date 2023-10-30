@@ -416,7 +416,7 @@ function get_specs(){
                   <div class="col-md-4" hidden><label for="consultancyfees">
                                 Consultancy Fees
                               </label></div>
-                              <div class="col-md-8">
+                              <div class="col-md-8" hidden>
                               <!-- <div id="docFees">Select a doctor</div> -->
                               <input class="form-control" type="text" name="docFees" id="docFees" readonly="readonly"/>
                   </div><br hidden><br>
