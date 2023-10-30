@@ -303,7 +303,7 @@ function get_specs(){
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <center><h4>Create an appointment</h4></center><br>
+              <center><h4>Crea una Cita</h4></center><br>
               <form class="form-group" method="post" action="admin-panel.php">
                 <div class="row">
                   
@@ -435,7 +435,7 @@ function get_specs(){
                   </div><br><br>
 
                   <div class="col-md-4">
-                    <input type="submit" name="app-submit" value="Crear" class="btn btn-primary" id="inputbtn">
+                    <input type="submit" name="app-submit" value="Create new entry" class="btn btn-primary" id="inputbtn">
                   </div>
                   <div class="col-md-8"></div>                  
                 </div>
