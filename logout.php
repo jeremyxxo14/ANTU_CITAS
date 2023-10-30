@@ -14,9 +14,9 @@ session_destroy();
 
     <style >
       .btn-outline-light:hover {
-        color: #0076d4;
-        background-color: #f8f9fa;
-        border-color: #E2688F;
+        color: #fff;
+        background: -webkit-linear-gradient(left,#F3BB2A, #E2688F );
+        border-color: #F3BB2A;
 }
     </style>
   </head>
