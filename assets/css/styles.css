@@ -783,6 +783,7 @@ h5.over-title {
   line-height: 1.9em;
   vertical-align: top;
   margin-right: 5px;
+  
 }
 .navbar .navbar-right .dropdown-menu.dropdown-large {
   width: 300px;
@@ -3610,6 +3611,7 @@ a.text-light:hover {
   top: 0;
   position: absolute;
   width: 40px;
+  
 }
 .core-box .view-more {
   float: right;

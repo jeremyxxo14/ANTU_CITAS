@@ -78,7 +78,7 @@ if(isset($_POST['docsub1']))
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+      background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
 }
 
 .col-md-4{
@@ -88,8 +88,8 @@ if(isset($_POST['docsub1']))
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
+    border-color: #F3BB2A;
 }
 .text-primary {
     color: #342ac1!important;
@@ -104,8 +104,8 @@ if(isset($_POST['docsub1']))
 }
 
 .btn-primary{
-  background-color: #3c50c1;
-  border-color: #3c50c1;
+  background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);
+  border-color: #F3BB2A;
 }
   </style>
 
@@ -127,12 +127,12 @@ if(isset($_POST['docsub1']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME RECEPTIONIST </h3>
+    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> Bienvenido Recepcionista </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:25%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">
       <a class="list-group-item list-group-item-action active" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="home">Inicio</a>
-      <a class="list-group-item list-group-item-action" href="#list-doc" id="list-doc-list"  role="tab"    aria-controls="home" data-toggle="list">Lista Profesionales</a>
+      <a class="list-group-item list-group-item-action" href="#list-doc" id="list-doc-list"  role="tab"  aria-controls="home" data-toggle="list">Lista Profesionales</a>
       <a class="list-group-item list-group-item-action" href="#list-pat" id="list-pat-list"  role="tab" data-toggle="list" aria-controls="home">Lista Pacientes</a>
       <a class="list-group-item list-group-item-action" href="#list-app" id="list-app-list"  role="tab" data-toggle="list" aria-controls="home">Detalles Citas</a>
       <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list"  role="tab" data-toggle="list" aria-controls="home">Lista Indicaciones</a>
@@ -151,9 +151,9 @@ if(isset($_POST['docsub1']))
         <div class="container-fluid container-fullw bg-white" >
               <div class="row">
                <div class="col-sm-4">
-                  <div class="panel panel-white no-radius text-center">
+                  <div class="panel panel-white no-radius text-center" >
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x">  <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse " ></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Lista Profesionales</h4>
                       <script>
                         function clickDiv(id) {
@@ -256,8 +256,8 @@ if(isset($_POST['docsub1']))
               <div class="col-md-8">
       <form class="form-group" action="doctorsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Email ID" class = "form-control"></div>
-        <div class="col-md-2"><input type="submit" name="doctor_search_submit" class="btn btn-primary" value="Search"></div></div>
+        <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Ingresa Email" class = "form-control"></div>
+        <div class="col-md-2"><input type="submit" name="doctor_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
               <table class="table table-hover">
@@ -305,7 +305,7 @@ if(isset($_POST['docsub1']))
       <form class="form-group" action="patientsearch.php" method="post">
         <div class="row">
         <div class="col-md-10"><input type="text" name="patient_contact" placeholder="Ingresa Numero" class = "form-control"></div>
-        <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-primary" value="Search"></div></div>
+        <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
         
@@ -426,8 +426,8 @@ if(isset($_POST['docsub1']))
          <div class="col-md-8">
       <form class="form-group" action="appsearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="app_contact" placeholder="Enter Contact" class = "form-control"></div>
-        <div class="col-md-2"><input type="submit" name="app_search_submit" class="btn btn-primary" value="Search"></div></div>
+        <div class="col-md-10"><input type="text" name="app_contact" placeholder="Ingresa Numero" class = "form-control"></div>
+        <div class="col-md-2"><input type="submit" name="app_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
         
@@ -546,8 +546,8 @@ if(isset($_POST['docsub1']))
          <div class="col-md-8">
       <form class="form-group" action="messearch.php" method="post">
         <div class="row">
-        <div class="col-md-10"><input type="text" name="mes_contact" placeholder="Enter Contact" class = "form-control"></div>
-        <div class="col-md-2"><input type="submit" name="mes_search_submit" class="btn btn-primary" value="Search"></div></div>
+        <div class="col-md-10"><input type="text" name="mes_contact" placeholder="ingresa contacto" class = "form-control"></div>
+        <div class="col-md-2"><input type="submit" name="mes_search_submit" class="btn btn-primary" value="Buscar"></div></div>
       </form>
     </div>
         
