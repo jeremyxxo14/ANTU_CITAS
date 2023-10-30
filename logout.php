@@ -16,12 +16,12 @@ session_destroy();
       .btn-outline-light:hover {
         color: #0076d4;
         background-color: #f8f9fa;
-        border-color: #f8f9fa;
+        border-color: #E2688F;
 }
     </style>
   </head>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff);color:white;padding-top:100px;text-align:center;">
-    <h3>You have logged out.</h3><br><br>
+  <body style="background: -webkit-linear-gradient(left, #E2688F, #F3BB2A);color:white;padding-top:100px;text-align:center;">
+    <h3>Sesion Cerrada.</h3><br><br>
     <a href="index1.php" class="btn btn-outline-light">Vuelve al Registro</a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
