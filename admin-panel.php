@@ -413,7 +413,7 @@ function get_specs(){
 
 
                   
-                  <div class="col-md-4"><label for="consultancyfees">
+                  <div class="col-md-4"><label for="consultancyfees" hidden>
                                 Consultancy Fees
                               </label></div>
                               <div class="col-md-8">
