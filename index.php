@@ -38,7 +38,7 @@ if (document.getElementById('password').value ==
     {
         var pass1 = document.getElementById("password");  
         if(pass1.value.length<6){  
-            alert("Password must be at least 6 characters long. Try again!");  
+            alert("La contraseña debe contener 6 caracteres como mínimo. ¡Intenta otra vez!");  
             return false;  
     }  
     }

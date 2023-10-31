@@ -76,7 +76,7 @@ include("header.php");
           <div class="card" style="font-family: 'IBM Plex Sans', sans-serif;">
             <div class="card-body">
               <center>
-                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#0062cc"></i>
+              <i class="fa fa-user fa-3x" aria-hidden="true" style="color:#212529;"></i>
                 <br>
               <h3 style="margin-top: 10%">Ingreso Paciente</h3><br>
               <form class="form-group" method="POST" action="func.php">

@@ -15,7 +15,7 @@ if(isset($_POST['patient_search_submit']))
   $result = mysqli_query($con,$query);
   $row=mysqli_fetch_array($result);
   if($row['lname']=="" & $row['email']=="" & $row['contact']=="" & $row['password']==""){
-    echo "<script> alert('No entries found! Please enter valid details'); 
+    echo "<script> alert('busqueda no encontrada! Por favor ingresa datos válidos'); 
           window.location.href = 'admin-panel1.php#list-doc';</script>";
   }
   else {
@@ -25,11 +25,11 @@ if(isset($_POST['patient_search_submit']))
 <table class='table table-hover'>
   <thead>
     <tr>
-      <th scope='col'>First Name</th>
-      <th scope='col'>Last Name</th>
+      <th scope='col'>Nombre</th>
+      <th scope='col'>Apellido</th>
       <th scope='col'>Email</th>
-      <th scope='col'>Contact</th>
-      <th scope='col'>Password</th>
+      <th scope='col'>Contacto</th>
+      <th scope='col'>Contraseña</th>
     </tr>
   </thead>
   <tbody>";
@@ -48,7 +48,7 @@ if(isset($_POST['patient_search_submit']))
           <td>$password</td>
         </tr>";
     
-	echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Back to dashboard</a></div></center></div></div></div>";
+	echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>volver a inicio</a></div></center></div></div></div>";
 }
   }
 	

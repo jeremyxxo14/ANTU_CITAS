@@ -17,7 +17,7 @@ if(isset($_POST['app_search_submit']))
   $result = mysqli_query($con,$query);
   $row=mysqli_fetch_array($result);
   if($row['fname']=="" & $row['lname']=="" & $row['email']=="" & $row['contact']=="" & $row['doctor']=="" & $row['docFees']=="" & $row['appdate']=="" & $row['apptime']==""){
-    echo "<script> alert('No entries found! Please enter valid details'); 
+    echo "<script> alert('Busqueda no encontrada! Por favor ingresa detalles válidos'); 
           window.location.href = 'admin-panel1.php#list-doc';</script>";
   }
   else {
@@ -27,15 +27,15 @@ if(isset($_POST['app_search_submit']))
   <table class='table table-hover'>
     <thead>
       <tr>
-        <th scope='col'>First Name</th>
-        <th scope='col'>Last Name</th>
-        <th scope='col'>Email</th>
-        <th scope='col'>Contact</th>
-        <th scope='col'>Doctor Name</th>
-        <th scope='col'>Consultancy Fees</th>
-        <th scope='col'>Appointment Date</th>
-        <th scope='col'>Appointment Time</th>
-        <th scope='col'>Appointment Status</th>
+        <th scope='col'>Nombre</th>
+        <th scope='col'>Apellido</th>
+        <th scope='col'>Emaail</th>
+        <th scope='col'>Contacto</th>
+        <th scope='col'>Nombre del especialista</th>
+        <th scope='col'>Honorarios de consultoría</th>
+        <th scope='col'>Día de la cita</th>
+        <th scope='col'>Hora de la cita</th>
+        <th scope='col'>Estado de la cita</th>
       </tr>
     </thead>
     <tbody>";
@@ -55,12 +55,12 @@ if(isset($_POST['app_search_submit']))
                     }
                     if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
                     {
-                      $appstatus = "Cancelled by You";
+                      $appstatus = "Cancelada por Usted";
                     }
 
                     if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
                     {
-                      $appstatus = "Cancelled by Doctor";
+                      $appstatus = "cancelada por el Doctor";
                     }
           echo "<tr>
             <td>$fname</td>
@@ -73,7 +73,7 @@ if(isset($_POST['app_search_submit']))
             <td>$apptime</td>
             <td>$appstatus</td>
           </tr>";
-    echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Back to your Dashboard</a></div></center></div></div></div>";
+    echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Volver a inicio</a></div></center></div></div></div>";
   }
   }
 	
