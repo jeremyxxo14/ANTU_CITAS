@@ -66,7 +66,6 @@ CREATE TABLE `appointmenttb` (
 -- Dumping data for table `appointmenttb`
 --
 
-INSERT INTO `appointmenttb` (`pid`, `ID`, `fname`, `lname`, `gender`, `email`, `contact`, `doctor`, `docFees`, `appdate`, `apptime`, `userStatus`, `doctorStatus`) VALUES
 
 
 -- --------------------------------------------------------
@@ -86,7 +85,7 @@ CREATE TABLE `contact` (
 -- Dumping data for table `contact`
 --
 
-INSERT INTO `contact` (`name`, `email`, `contact`, `message`) VALUES
+
 
 
 -- --------------------------------------------------------
@@ -107,7 +106,7 @@ CREATE TABLE `doctb` (
 -- Dumping data for table `doctb`
 --
 
-INSERT INTO `doctb` (`username`, `password`, `email`, `spec`, `docFees`) VALUES
+
 
 
 -- --------------------------------------------------------
@@ -131,7 +130,7 @@ CREATE TABLE `patreg` (
 -- Dumping data for table `patreg`
 --
 
-INSERT INTO `patreg` (`pid`, `fname`, `lname`, `gender`, `email`, `contact`, `password`, `cpassword`) VALUES
+
 
 
 -- --------------------------------------------------------
@@ -157,7 +156,7 @@ CREATE TABLE `prestb` (
 -- Dumping data for table `prestb`
 --
 
-INSERT INTO `prestb` (`doctor`, `pid`, `ID`, `fname`, `lname`, `appdate`, `apptime`, `disease`, `allergy`, `prescription`) VALUES
+
 
 
 --
