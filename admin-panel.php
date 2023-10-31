@@ -46,22 +46,22 @@ if(isset($_POST['app-submit']))
 
           if($query)
           {
-            echo "<script>alert('Your appointment successfully booked');</script>";
+            echo "<script>alert('Su cita fue reservada exitosamente');</script>";
           }
           else{
-            echo "<script>alert('Unable to process your request. Please try again!');</script>";
+            echo "<script>alert('No se puede procesar su solicitud. ¡Inténtalo de nuevo!');</script>";
           }
       }
       else{
-        echo "<script>alert('We are sorry to inform that the doctor is not available in this time or date. Please choose different time or date!');</script>";
+        echo "<script>alert('Lamentamos informar que el médico no está disponible en este horario o fecha. Por favor elija una hora o fecha diferente!');</script>";
       }
     }
     else{
-      echo "<script>alert('Select a time or date in the future!');</script>";
+      echo "<script>alert('Seleccione una hora o fecha en el futuro!');</script>";
     }
   }
   else{
-      echo "<script>alert('Select a time or date in the future!');</script>";
+      echo "<script>alert('Seleccione una hora o fecha en el futuro!');</script>";
   }
   
 }
@@ -71,7 +71,7 @@ if(isset($_GET['cancel']))
     $query=mysqli_query($con,"update appointmenttb set userStatus='0' where ID = '".$_GET['ID']."'");
     if($query)
     {
-      echo "<script>alert('Tu boleta ya fue pagada');</script>";
+      echo "<script>alert('Tu cita fue cancelada!');</script>";
     }
   }
 
@@ -575,7 +575,7 @@ function get_specs(){
 
                               <a href="admin-panel.php?ID=<?php echo $row['ID']?>">
                               <input type ="hidden" name="ID" value="<?php echo $row['ID']?>"/>
-                              <input type = "submit" onclick="alert('Boleta pagada exitosamente');" name ="generate_bill" class = "btn btn-success" value="Boleta"/>
+                              <input type = "submit" onclick="alert('Generar Indicacion');" name ="generate_bill" class = "btn btn-success" value="Descargar"/>
                               </a>
                               </td>
                               </form>
@@ -596,7 +596,7 @@ function get_specs(){
       <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
         <form class="form-group" method="post" action="func.php">
           <label>Nombre Profesional: </label>
-          <input type="text" name="name" placeholder="Enter doctors name" class="form-control">
+          <input type="text" name="name" placeholder="Ingresar nombre de especialista" class="form-control">
           <br>
           <input type="submit" name="doc_sub" value="Add Doctor" class="btn btn-primary">
         </form>

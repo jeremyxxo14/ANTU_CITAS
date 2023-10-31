@@ -8,7 +8,7 @@ if(isset($_GET['cancel']))
     $query=mysqli_query($con,"update appointmenttb set doctorStatus='0' where ID = '".$_GET['ID']."'");
     if($query)
     {
-      echo "<script>alert('Your appointment successfully cancelled');</script>";
+      echo "<script>alert('Tu cita fue cancelada exitosamente');</script>";
     }
   }
 
@@ -199,16 +199,16 @@ if(isset($_GET['cancel']))
                         <td>
                     <?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
                     {
-                      echo "Active";
+                      echo "Activo";
                     }
                     if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
                     {
-                      echo "Cancelled by Patient";
+                      echo "Cancelado por el paciente";
                     }
 
                     if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
                     {
-                      echo "Cancelled by You";
+                      echo "Cancelado por usted";
                     }
                         ?></td>
 
@@ -218,7 +218,7 @@ if(isset($_GET['cancel']))
 
 													
 	                        <a href="doctor-panel.php?ID=<?php echo $row['ID']?>&cancel=update" 
-                              onClick="return confirm('Are you sure you want to cancel this appointment ?')"
+                              onClick="return confirm('Estás seguro de que deseas cancelar esta cita ?')"
                               title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 

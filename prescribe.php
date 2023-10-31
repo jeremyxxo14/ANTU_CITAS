@@ -33,10 +33,10 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
   $query=mysqli_query($con,"insert into prestb(doctor,pid,ID,fname,lname,appdate,apptime,disease,allergy,prescription) values ('$doctor','$pid','$ID','$fname','$lname','$appdate','$apptime','$disease','$allergy','$prescription')");
     if($query)
     {
-      echo "<script>alert('Prescribed successfully!');</script>";
+      echo "<script>alert('Enviado exitosamente!');</script>";
     }
     else{
-      echo "<script>alert('Unable to process your request. Try again!');</script>";
+      echo "<script>alert('No se puede procesar su solicitud. ¡Intentar otra vez!');</script>";
     }
   // else{
   //   echo "<script>alert('GET is not working!');</script>";
@@ -112,25 +112,25 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
 
 <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%;  padding-bottom: 20px; font-family: 'IBM Plex Sans', sans-serif;"> Welcome &nbsp<?php echo $doctor ?>
+    <h3 style = "margin-left: 40%;  padding-bottom: 20px; font-family: 'IBM Plex Sans', sans-serif;"> Bienvenido &nbsp<?php echo $doctor ?>
    </h3>
 
    <div class="tab-pane" id="list-pres" role="tabpanel" aria-labelledby="list-pres-list">
         <form class="form-group" name="prescribeform" method="post" action="prescribe.php">
         
           <div class="row">
-                  <div class="col-md-4"><label>Disease:</label></div>
+                  <div class="col-md-4"><label>Enfermedad:</label></div>
                   <div class="col-md-8">
                   <!-- <input type="text" class="form-control" name="disease" required> -->
                   <textarea id="disease" cols="86" rows ="5" name="disease" required></textarea>
                   </div><br><br><br>
                   
-                  <div class="col-md-4"><label>Allergies:</label></div>
+                  <div class="col-md-4"><label>Alergias:</label></div>
                   <div class="col-md-8">
                   <!-- <input type="text"  class="form-control" name="allergy" required> -->
                   <textarea id="allergy" cols="86" rows ="5" name="allergy" required></textarea>
                   </div><br><br><br>
-                  <div class="col-md-4"><label>Prescription:</label></div>
+                  <div class="col-md-4"><label>Receta:</label></div>
                   <div class="col-md-8">
                   <!-- <input type="text" class="form-control"  name="prescription"  required> -->
                   <textarea id="prescription" cols="86" rows ="10" name="prescription" required></textarea>
@@ -142,7 +142,7 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
                   <input type="hidden" name="pid" value="<?php echo $pid ?>" />
                   <input type="hidden" name="ID" value="<?php echo $ID ?>" />
                   <br><br><br><br>
-          <input type="submit" name="prescribe" value="Prescribe" class="btn btn-primary" style="margin-left: 40pc;">
+          <input type="submit" name="prescribe" value="Recetar" class="btn btn-primary" style="margin-left: 40pc;">
           
         </form>
         <br>

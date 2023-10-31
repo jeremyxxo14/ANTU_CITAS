@@ -13,7 +13,7 @@ if(isset($_POST['btnSubmit']))
 	if($result)
     {
     	echo '<script type="text/javascript">'; 
-		echo 'alert("Message sent successfully!");'; 
+		echo 'alert("Mensaje enviado exitosamente");'; 
 		echo 'window.location.href = "contact.html";';
 		echo '</script>';
     }

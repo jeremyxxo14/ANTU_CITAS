@@ -20,7 +20,7 @@ if(isset($_POST['patsub'])){
 		header("Location:admin-panel.php");
 	}
   else {
-    echo("<script>alert('Invalid Username or Password. Try Again!');
+    echo("<script>alert('Usuario o contraseña invalido. ¡Intentar otra vez!');
           window.location.href = 'index1.php';</script>");
     // header("Location:error.php");
   }
