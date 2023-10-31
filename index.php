@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Antu</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/antu_profesionales/antupestaña.png" />
 <link rel="stylesheet" type="text/css" href="style1.css">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
