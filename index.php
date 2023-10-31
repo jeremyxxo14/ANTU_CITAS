@@ -22,10 +22,10 @@
 if (document.getElementById('password').value ==
     document.getElementById('cpassword').value) {
     document.getElementById('message').style.color = '#5dd05d';
-    document.getElementById('message').innerHTML = 'Matched';
+    document.getElementById('message').innerHTML = 'Coinciden';
 } else {
     document.getElementById('message').style.color = '#f55252';
-    document.getElementById('message').innerHTML = 'Not Matching';
+    document.getElementById('message').innerHTML = 'No Coinciden';
 }
 }
 
@@ -131,7 +131,7 @@ if (document.getElementById('password').value ==
                                         </div>
                                         
                                         <div class="form-group">
-                                            <input type="tel" minlength="10" maxlength="10" name="contact" class="form-control" placeholder="Telefono *"  />
+                                            <input type="tel" minlength="9" maxlength="9" name="contact" class="form-control" placeholder="Telefono *"  />
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control"  id="cpassword" placeholder="Confirmar Contraseña *" name="cpassword"  onkeyup='check();' required/><span id='message'></span>
