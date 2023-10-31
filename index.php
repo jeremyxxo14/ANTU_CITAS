@@ -112,16 +112,16 @@ if (document.getElementById('password').value ==
                                         
                                         <div class="form-group">
                                             <div class="maxl">
-                                                <label class="radio inline"> 
+                                                <label class="radio inlines"> 
                                                     <input type="radio" name="gender" value="Male" checked>
                                                     <span>Masculino</span> 
                                                 </label>
-                                                <label class="radio inline"> 
+                                                <label| class="radio inline"> 
                                                     <input type="radio" name="gender" value="Female">
                                                     <span>Femenino</span> 
                                                 </label>
                                             </div>
-                                            <a href="index1.php">Ya tienes una Cuenta?</a>
+                                            <a style="color: orange;" href="index1.php">Ya tienes una Cuenta?</a>
                                         </div>
                                     </div>
                                 
