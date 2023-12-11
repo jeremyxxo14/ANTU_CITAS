@@ -266,7 +266,7 @@ if(isset($_POST['docsub1']))
                     <th scope="col">Nombre Profesionales</th>
                     <th scope="col">Especialicacion</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Contraseña</th>
+                   
                    
                   </tr>
                 </thead>
@@ -280,14 +280,14 @@ if(isset($_POST['docsub1']))
                       $username = $row['username'];
                       $spec = $row['spec'];
                       $email = $row['email'];
-                      $password = $row['password'];
+                     
                       
                       
                       echo "<tr>
                         <td>$username</td>
                         <td>$spec</td>
                         <td>$email</td>
-                        <td>$password</td>
+                        
                         
                       </tr>";
                     }
@@ -318,7 +318,7 @@ if(isset($_POST['docsub1']))
                     <th scope="col">Genero</th>
                     <th scope="col">Email</th>
                     <th scope="col">Contacto</th>
-                    <th scope="col">Contraseña</th>
+                   
                   </tr>
                 </thead>
                 <tbody>
@@ -334,7 +334,7 @@ if(isset($_POST['docsub1']))
                       $gender = $row['gender'];
                       $email = $row['email'];
                       $contact = $row['contact'];
-                      $password = $row['password'];
+                      
                       
                       echo "<tr>
                         <td>$pid</td>
@@ -343,7 +343,7 @@ if(isset($_POST['docsub1']))
                         <td>$gender</td>
                         <td>$email</td>
                         <td>$contact</td>
-                        <td>$password</td>
+                        
                       </tr>";
                     }
 
