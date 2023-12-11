@@ -63,10 +63,10 @@ if(isset($_POST['docsub1']))
   if (document.getElementById('dpassword').value ==
     document.getElementById('cdpassword').value) {
     document.getElementById('message').style.color = '#5dd05d';
-    document.getElementById('message').innerHTML = 'Matched';
+    document.getElementById('message').innerHTML = 'Coinciden';
   } else {
     document.getElementById('message').style.color = '#f55252';
-    document.getElementById('message').innerHTML = 'Not Matching';
+    document.getElementById('message').innerHTML = 'No Coinciden';
   }
 }
 
