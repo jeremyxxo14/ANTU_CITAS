@@ -13,7 +13,7 @@ include("newfunc.php");
 if(isset($_POST['app_search_submit']))
 {
 	$contact=$_POST['app_contact'];
-	$query = "select * from appointmenttb where contact= '$contact';";
+	$query = "select * from appointmenttb where contact= '$contact'; and email='$email'";
   $result = mysqli_query($con,$query);
   $row=mysqli_fetch_array($result);
   if($row['fname']=="" & $row['lname']=="" & $row['email']=="" & $row['contact']=="" & $row['doctor']=="" & $row['docFees']=="" & $row['appdate']=="" & $row['apptime']==""){
@@ -79,4 +79,4 @@ if(isset($_POST['app_search_submit']))
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
 </body>
-</html>
+</html> 
