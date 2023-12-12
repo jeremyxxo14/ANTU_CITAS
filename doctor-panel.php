@@ -222,7 +222,7 @@ if(isset($_GET['cancel']))
                               title="Cancel Appointment" tooltip-placement="top" tooltip="Remove"><button class="btn btn-danger">Cancelar</button></a>
 	                        <?php } else {
 
-                                echo "Cancelled";
+                                echo "Cancelado";
                                 } ?>
                         
                         </td>
@@ -366,8 +366,6 @@ if(isset($_GET['cancel']))
                   <div class="col-md-8"><input type="password" class="form-control"  name="dpassword" required></div><br><br>
                   <div class="col-md-4"><label>Email:</label></div>
                   <div class="col-md-8"><input type="email"  class="form-control" name="demail" required></div><br><br>
-                  <div class="col-md-4"><label>Horas consultas:</label></div>
-                  <div class="col-md-8"><input type="text" class="form-control"  name="docFees" required></div><br><br>
                 </div>
           <input type="submit" name="docsub" value="Add Doctor" class="btn btn-primary">
         </form>
