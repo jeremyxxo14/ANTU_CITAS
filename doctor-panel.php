@@ -130,7 +130,7 @@ if(isset($_GET['cancel']))
                       </script>                      
                       <p class="links cl-effect-1">
                         <a href="#list-app" onclick="clickDiv('#list-app-list')">
-                          Appointment List
+                          Lista de Citas
                         </a>
                       </p>
                     </div>
