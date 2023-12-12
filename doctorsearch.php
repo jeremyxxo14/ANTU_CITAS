@@ -27,6 +27,7 @@ if(isset($_POST['doctor_search_submit']))
   <thead>
     <tr>
       <th scope='col'>Nombre</th>
+      <th scope='col'>Especialicacion</th>
       <th scope='col'>Email</th>
     </tr>
   </thead>
@@ -34,9 +35,11 @@ if(isset($_POST['doctor_search_submit']))
 
 	// while ($row=mysqli_fetch_array($result)){
 		    $username = $row['username'];
+        $spec = $row['spec'];
         $email = $row['email'];
         echo "<tr>
           <td>$username</td>
+          <td>$spec</td>
           <td>$email</td>
         </tr>";
 	// }
