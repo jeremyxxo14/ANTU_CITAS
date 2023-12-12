@@ -27,23 +27,20 @@ if(isset($_POST['doctor_search_submit']))
   <thead>
     <tr>
       <th scope='col'>Nombre</th>
-      <th scope='col'>Contraseña</th>
+      <th scope='col'>Especialicacion</th>
       <th scope='col'>Email</th>
-      <th scope='col'>Hora de consulta</th>
     </tr>
   </thead>
   <tbody>";
 
 	// while ($row=mysqli_fetch_array($result)){
 		    $username = $row['username'];
-        $password = $row['password'];
+        $spec = $row['spec'];
         $email = $row['email'];
-        $docFees = $row['docFees'];
         echo "<tr>
           <td>$username</td>
-          <td>$password</td>
+          <td>$spec</td>
           <td>$email</td>
-          <td>$docFees</td>
         </tr>";
 	// }
 	echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Volver a inicio</a></div></center></div></div></div>";

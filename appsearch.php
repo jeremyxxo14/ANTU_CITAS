@@ -33,7 +33,6 @@ if(isset($_POST['app_search_submit']))
         <th scope='col'>Emaail</th>
         <th scope='col'>Contacto</th>
         <th scope='col'>Nombre del especialista</th>
-        <th scope='col'>Honorarios de consultoría</th>
         <th scope='col'>Día de la cita</th>
         <th scope='col'>Hora de la cita</th>
         <th scope='col'>Estado de la cita</th>
@@ -47,7 +46,6 @@ if(isset($_POST['app_search_submit']))
           $email = $row['email'];
           $contact = $row['contact'];
           $doctor = $row['doctor'];
-          $docFees= $row['docFees'];
           $appdate= $row['appdate'];
           $apptime = $row['apptime'];
           if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
@@ -69,7 +67,6 @@ if(isset($_POST['app_search_submit']))
             <td>$email</td>
             <td>$contact</td>
             <td>$doctor</td>
-            <td>$docFees</td>
             <td>$appdate</td>
             <td>$apptime</td>
             <td>$appstatus</td>
