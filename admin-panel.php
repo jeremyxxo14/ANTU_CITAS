@@ -365,10 +365,7 @@ function get_specs(){
                 document.getElementById('docFees').value = selection;
               };
             </script>
-
                   
-                  
-
                   
                         <!-- <div class="col-md-4"><label for="doctor">Doctors:</label></div>
                                 <div class="col-md-8">

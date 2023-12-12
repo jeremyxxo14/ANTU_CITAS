@@ -27,7 +27,7 @@ if(isset($_POST['doctor_search_submit']))
   <thead>
     <tr>
       <th scope='col'>Nombre</th>
-      <th scope='col'>Especialicacion</th>
+      <th scope='col'>Especializacion</th>
       <th scope='col'>Email</th>
     </tr>
   </thead>
