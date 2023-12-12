@@ -10,8 +10,8 @@ if(isset($_POST['docsub']))
   $dpassword=$_POST['dpassword'];
   $demail=$_POST['demail'];
   $spec=$_POST['special'];
-  $docFees=$_POST['docFees'];
-  $query="insert into doctb(username,password,email,spec,docFees)values('$doctor','$dpassword','$demail','$spec','$docFees')";
+  
+  $query="insert into doctb(username,password,email,spec)values('$doctor','$dpassword','$demail','$spec')";
   $result=mysqli_query($con,$query);
   if($result)
     {
