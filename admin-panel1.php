@@ -519,8 +519,6 @@ if(isset($_POST['docsub1']))
                   <div class="col-md-8"  id='cpass'><input type="password" class="form-control" onkeyup='check();' name="cdpassword" id="cdpassword" required>&nbsp &nbsp<span id='message'></span> </div><br><br>
                    
                   
-                  <div class="col-md-4" hidden><label>Horas al Mes:</label></div>
-                  <div class="col-md-8" hidden><input type="text" class="form-control" value="1000" name="docFees" required></div><br><br>
                 </div>
           <input type="submit" name="docsub" value="Agregar Profesional" class="btn btn-primary">
         </form>

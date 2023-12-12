@@ -26,8 +26,7 @@ if(isset($_POST['app-submit']))
   $contact = $_SESSION['contact'];
   $doctor=$_POST['doctor'];
   $email=$_SESSION['email'];
-  # $fees=$_POST['fees'];
-  $docFees=$_POST['docFees'];
+
 
   $appdate=$_POST['appdate'];
   $apptime=$_POST['apptime'];
@@ -42,7 +41,7 @@ if(isset($_POST['app-submit']))
       $check_query = mysqli_query($con,"select apptime from appointmenttb where doctor='$doctor' and appdate='$appdate' and apptime='$apptime'");
 
         if(mysqli_num_rows($check_query)==0){
-          $query=mysqli_query($con,"insert into appointmenttb(pid,fname,lname,gender,email,contact,doctor,docFees,appdate,apptime,userStatus,doctorStatus) values($pid,'$fname','$lname','$gender','$email','$contact','$doctor','$docFees','$appdate','$apptime','1','1')");
+          $query=mysqli_query($con,"insert into appointmenttb(pid,fname,lname,gender,email,contact,doctor,appdate,apptime,userStatus,doctorStatus) values($pid,'$fname','$lname','$gender','$email','$contact','$doctor','$appdate','$apptime','1','1')");
 
           if($query)
           {
