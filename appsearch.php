@@ -13,8 +13,7 @@ include("newfunc.php");
 if(isset($_POST['app_search_submit']))
 {
 	$contact=$_POST['app_contact'];
-	$query = "select * from appointmenttb where contact= '$contact';";
-  $query = "select * from appointmenttb where email= '$email';";
+	$query = "select * from appointmenttb where contact= '$contact' email= '$email';";
   $result = mysqli_query($con,$query);
   $row=mysqli_fetch_array($result);
   if($row['fname']=="" & $row['lname']=="" & $row['email']=="" & $row['contact']=="" & $row['doctor']=="" & $row['docFees']=="" & $row['appdate']=="" & $row['apptime']==""){
@@ -30,7 +29,7 @@ if(isset($_POST['app_search_submit']))
       <tr>
         <th scope='col'>Nombre</th>
         <th scope='col'>Apellido</th>
-        <th scope='col'>Emaail</th>
+        <th scope='col'>Email</th>
         <th scope='col'>Contacto</th>
         <th scope='col'>Nombre del especialista</th>
         <th scope='col'>Día de la cita</th>
