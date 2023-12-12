@@ -29,7 +29,6 @@ if(isset($_POST['patient_search_submit']))
       <th scope='col'>Apellido</th>
       <th scope='col'>Email</th>
       <th scope='col'>Contacto</th>
-      <th scope='col'>Contraseña</th>
     </tr>
   </thead>
   <tbody>";
@@ -39,13 +38,11 @@ if(isset($_POST['patient_search_submit']))
         $lname = $row['lname'];
         $email = $row['email'];
         $contact = $row['contact'];
-        $password = $row['password'];
         echo "<tr>
           <td>$fname</td>
           <td>$lname</td>
           <td>$email</td>
           <td>$contact</td>
-          <td>$password</td>
         </tr>";
     
 	echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>volver a inicio</a></div></center></div></div></div>";

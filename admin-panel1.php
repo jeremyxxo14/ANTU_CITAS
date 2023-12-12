@@ -264,7 +264,7 @@ if(isset($_POST['docsub1']))
                 <thead>
                   <tr>
                     <th scope="col">Nombre Profesionales</th>
-                    <th scope="col">Especialicacion</th>
+                    <th scope="col">Especializacion</th>
                     <th scope="col">Email</th>
                    
                    
@@ -497,7 +497,7 @@ if(isset($_POST['docsub1']))
           <div class="row">
                   <div class="col-md-4"><label>Nombre Doctor:</label></div>
                   <div class="col-md-8"><input type="text" class="form-control" name="doctor" onkeydown="return alphaOnly(event);" required></div><br><br>
-                  <div class="col-md-4"><label>Especialicacion:</label></div>
+                  <div class="col-md-4"><label>Especializacion:</label></div>
                   <div class="col-md-8">
                    <select name="special" class="form-control" id="special" required="required">
                       <option value="head" name="spec" disabled selected>Selecciona Especialiacion</option>
