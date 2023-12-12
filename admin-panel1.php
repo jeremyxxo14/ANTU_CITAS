@@ -500,7 +500,7 @@ if(isset($_POST['docsub1']))
                   <div class="col-md-4"><label>Especializacion:</label></div>
                   <div class="col-md-8">
                    <select name="special" class="form-control" id="special" required="required">
-                      <option value="head" name="spec" disabled selected>Selecciona Especialiacion</option>
+                      <option value="head" name="spec" disabled selected>Selecciona Especializacion</option>
                       <option value="Nutricion" name="spec">Nutricion</option>
                       <option value="Psicologia" name="spec">Psicologia</option>
                       <option value="TerapiaOcupacional" name="spec">Terapia Ocupacional</option>
