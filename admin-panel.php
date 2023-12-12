@@ -86,16 +86,14 @@ function generate_bill(){
   $query=mysqli_query($con,"select p.pid,p.ID,p.fname,p.lname,p.doctor,p.appdate,p.apptime,p.disease,p.allergy,p.prescription,a.docFees from prestb p inner join appointmenttb a on p.ID=a.ID and p.pid = '$pid' and p.ID = '".$_GET['ID']."'");
   while($row = mysqli_fetch_array($query)){
     $output .= '
-    <label> Patient ID : </label>'.$row["pid"].'<br/><br/>
-    <label> Appointment ID : </label>'.$row["ID"].'<br/><br/>
-    <label> Patient Name : </label>'.$row["fname"].' '.$row["lname"].'<br/><br/>
-    <label> Doctor Name : </label>'.$row["doctor"].'<br/><br/>
-    <label> Appointment Date : </label>'.$row["appdate"].'<br/><br/>
-    <label> Appointment Time : </label>'.$row["apptime"].'<br/><br/>
-    <label> Disease : </label>'.$row["disease"].'<br/><br/>
-    <label> Allergies : </label>'.$row["allergy"].'<br/><br/>
-    <label> Prescription : </label>'.$row["prescription"].'<br/><br/>
-    <label> Fees Paid : </label>'.$row["docFees"].'<br/>
+    <label> Paciente ID: </label>'.$row["pid"].'<br/><br/>
+    <label> Cita ID : </label>'.$row["ID"].'<br/><br/>
+    <label> Nombre Paciente : </label>'.$row["fname"].' '.$row["lname"].'<br/><br/>
+    <label> Nombre Doctor : </label>'.$row["doctor"].'<br/><br/>
+    <label> Fecha cita : </label>'.$row["appdate"].'<br/><br/>
+    <label> Hora cita : </label>'.$row["apptime"].'<br/><br/>
+    <label> Indicaciones : </label>'.$row["prescription"].'<br/><br/>
+    
     
     ';
 
@@ -126,8 +124,8 @@ if(isset($_GET["generate_bill"])){
 
   $content .= '
       <br/>
-      <h2 align ="center"> Global Hospitals</h2></br>
-      <h3 align ="center"> Bill</h3>
+      <h2 align ="center"> Antu Centro intervencion integral</h2></br>
+      <h3 align ="center"> Indicaciones</h3>
       
 
   ';
@@ -414,13 +412,7 @@ function get_specs(){
 
 
                   
-                  <div class="col-md-4"><label for="consultancyfees">
-                                Horas de consultas
-                              </label></div>
-                              <div class="col-md-8">
-                              <!-- <div id="docFees">Select a doctor</div> -->
-                              <input class="form-control" type="text" name="docFees" id="docFees" readonly="readonly"/>
-                  </div><br><br>
+                  
 
                   <div class="col-md-4"><label>Fecha Cita</label></div>
                   <div class="col-md-8"><input type="date" class="form-control datepicker" name="appdate"></div><br><br>
@@ -459,7 +451,7 @@ function get_specs(){
                   <tr>
                     
                     <th scope="col">Nombre Paciente</th>
-                    <th scope="col">Horas de consultas</th>
+                    
                     <th scope="col">Fecha Cita</th>
                     <th scope="col">Hora Cita</th>
                     <th scope="col">Estado</th>
@@ -483,14 +475,14 @@ function get_specs(){
                   ?>
                       <tr>
                         <td><?php echo $row['doctor'];?></td>
-                        <td><?php echo $row['docFees'];?></td>
+                        
                         <td><?php echo $row['appdate'];?></td>
                         <td><?php echo $row['apptime'];?></td>
                         
                           <td>
                     <?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
                     {
-                      echo "Active";
+                      echo "Activa";
                     }
                     if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
                     {
