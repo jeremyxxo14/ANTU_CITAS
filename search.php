@@ -18,16 +18,16 @@ if(isset($_POST['search_submit'])){
   </head>
   <body style="background-color:#342ac1;color:white;text-align:center;padding-top:50px;">
   <div class="container" style="text-align:left;">
-  <center><h3>Search Results</h3></center><br>
+  <center><h3>Buscar Resultado</h3></center><br>
   <table class="table table-hover">
   <thead>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
       <th>Email</th>
-      <th>Contact</th>
-      <th>Appointment Date</th>
-      <th>Appointment Time</th>
+      <th>Contacto</th>
+      <th>Dia de cita</th>
+      <th>Hora de cita </th>
     </tr>
   </thead>
   <tbody>
@@ -49,7 +49,7 @@ if(isset($_POST['search_submit'])){
     </tr>';
   }
 echo '</tbody></table></div> 
-<div><a href="doctor-panel.php" class="btn btn-light">Go Back</a></div>
+<div><a href="doctor-panel.php" class="btn btn-light">Volver Atras</a></div>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
