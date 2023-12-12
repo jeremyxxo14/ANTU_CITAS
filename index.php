@@ -113,11 +113,11 @@ if (document.getElementById('password').value ==
                                         <div class="form-group">
                                             <div class="maxl">
                                                 <label class="radio inlines"> 
-                                                    <input type="radio" name="gender" value="Male" checked>
+                                                    <input type="radio" name="gender" value="Masculino" checked>
                                                     <span>Masculino</span> 
                                                 </label>
                                                 <label| class="radio inline"> 
-                                                    <input type="radio" name="gender" value="Female">
+                                                    <input type="radio" name="gender" value="Femenino">
                                                     <span>Femenino</span> 
                                                 </label>
                                             </div>
